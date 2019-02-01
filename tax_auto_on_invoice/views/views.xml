@@ -1,0 +1,13 @@
+<odoo>
+  <!--Extending existing form view for price_ttc-->
+	<record id="account.view_tax_form_autotax" model="ir.ui.view">
+        <field name="name">account.tax.form.autotax</field>
+        <field name="model">account.tax</field>
+        <field name="inherit_id" ref="account.view_tax_form"/>
+        <field name="arch" type="xml"> 
+          <group name="advanced_booleans" position="inside">
+              <field name="auto_tax"/> 
+          </group>
+        </field>
+    </record>
+</odoo>
